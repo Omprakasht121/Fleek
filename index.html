@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <!-- navbar  -->
+        <header id="header">
+            <div class="elements">
+                <div id="logo"><p>F</p></div>
+                <p>FLEEK</p>
+            </div>
+            <div id="search">
+                <label for="search"></label>
+                <input type="text" id="search" placeholder="Search Products">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div id="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="product-quantity"></span>
+                </div>
+            </div>
+            
+        </header>
+        <!-- main content & cards  -->
+        <div id="main">
+            <div id="heading-content">
+                <h1>Discover Your Product</h1>
+                <p>Curated styles just for you.</p>
+                <div id="filter">
+                    <button class="btn">All Items</button>
+                    <button class="btn">Shirts</button>
+                    <button class="btn">Jeans</button>
+                    <button class="btn">Blazer</button>
+                </div>
+            </div>
+            <div id="product-grid" class="grid">
+                <div class="skelton-card"></div>
+                <div class="skelton-card"></div>
+                <div class="skelton-card"></div>
+                <div class="skelton-card"></div>
+
+            </div>
+        </div>
+
+        <!-- 🛍 CART DRAWER -->
+        <div id="cart-drawer">
+            <div id="cart-header">
+                <h2>Your Cart</h2>
+                <button id="close-cart">✖</button>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div id="cart-footer">
+                <h3>Total: Rs: <span id="cart-total">0</span></h3>
+            </div>
+            <div class="payment">
+                <a id="paynow">Pay Now</a>
+            </div>
+        </div>
+
+        <!-- OVERLAY -->
+        <div id="overlay"></div>
+    </div>
+
+<script src="scripts/app.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="scripts/payment.js"></script>
+
+</body>
+</html>
