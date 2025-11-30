@@ -12,7 +12,7 @@ document.getElementById("paynow").addEventListener("click", function () {
         "key": "rzp_test_RlfVFTs1RenTks",   // <<--- PUT YOUR TEST KEY HERE
         "amount": totalAmount * 100,    // Razorpay uses paise
         "currency": "INR",
-        "name": "Zanco Store",
+        "name": "Fleek Store",
         "description": "Test Payment",
         "image": "https://your-logo-url.com/logo.png",
 
