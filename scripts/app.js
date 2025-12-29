@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
 });
 
 
-let cartCount = 0;
 
 async function loadProducts() {
     const grid = document.getElementById("product-grid");

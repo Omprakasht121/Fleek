@@ -1,6 +1,6 @@
 document.getElementById("paynow").addEventListener("click", function () {
 
-    // Get total amount from cart
+
     let totalAmount = parseFloat(document.getElementById("cart-total").innerText);
 
     if (!totalAmount || totalAmount <= 0) {
@@ -9,8 +9,8 @@ document.getElementById("paynow").addEventListener("click", function () {
     }
 
     var options = {
-        "key": "rzp_test_RlfVFTs1RenTks",   // <<--- PUT YOUR TEST KEY HERE
-        "amount": totalAmount * 100,    // Razorpay uses paise
+        "key": window.CONFIG.RAZORPAY_KEY,  
+        "amount": totalAmount * 100,   
         "currency": "INR",
         "name": "Fleek Store",
         "description": "Test Payment",
@@ -26,7 +26,7 @@ document.getElementById("paynow").addEventListener("click", function () {
         }
     };
 
-    // open payment screen
+    
     var rzp = new Razorpay(options);
     rzp.open();
 });
