@@ -7,7 +7,7 @@ document.getElementById("paynow").addEventListener("click", function () {
         alert("Your cart is empty!");
         return;
     }
-
+    console.log(window.CONFIG.RAZORPAY_KEY);
     var options = {
         "key": window.CONFIG.RAZORPAY_KEY,  
         "amount": totalAmount * 100,   
